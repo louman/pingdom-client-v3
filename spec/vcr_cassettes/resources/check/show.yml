@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pingdom.com/api/3.1/checks/13904898
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin22 arm64) ruby/3.2.2p53
+      Authorization:
+      - "<AUTHORIZATION_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.pingdom.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 May 2025 03:55:36 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Req-Limit-Long:
+      - 'Remaining: 2087981 Time until reset: 2576670'
+      Req-Limit-Short:
+      - 'Remaining: 11592 Time until reset: 1261'
+      Server-Time:
+      - '1747281336'
+      X-Trace:
+      - 2BDC8EA31018D89D20BE7E0DBD0363EF660EF38F60EE720D933CE6045100
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 93ffb355ab76d734-BNE
+    body:
+      encoding: UTF-8
+      string: '{"check":{"id":13904898,"name":"a test check","resolution":5,"sendnotificationwhendown":2,"notifyagainevery":0,"notifywhenbackup":true,"created":1747281274,"type":{"http":{"verify_certificate":true,"url":"\/","encryption":false,"port":80,"requestheaders":{"User-Agent":"Pingdom.com_bot_version_1.4_(http:\/\/www.pingdom.com\/)"}}},"hostname":"google.com","ipv6":false,"responsetime_threshold":30000,"custom_message":"","integrationids":[],"status":"unknown","tags":[],"probe_filters":[]}}'
+    http_version:
+  recorded_at: Thu, 15 May 2025 03:55:36 GMT
+recorded_with: VCR 3.0.3

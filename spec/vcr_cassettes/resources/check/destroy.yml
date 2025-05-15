@@ -1,0 +1,109 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.pingdom.com/api/3.1/checks
+    body:
+      encoding: UTF-8
+      string: '{"host":"google.com","name":"a test check to destroy","type":"http"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin22 arm64) ruby/3.2.2p53
+      Authorization:
+      - "<AUTHORIZATION_TOKEN>"
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '68'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.pingdom.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 May 2025 03:57:52 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Req-Limit-Long:
+      - 'Remaining: 2087979 Time until reset: 2576533'
+      Req-Limit-Short:
+      - 'Remaining: 11590 Time until reset: 1124'
+      Server-Time:
+      - '1747281472'
+      X-Trace:
+      - 2BFD9E9330B4C76F32A5D93B1E44688C48F2FFEAB28AAA23714EF1823A00
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 93ffb6ad98874875-BNE
+    body:
+      encoding: UTF-8
+      string: '{"check":{"id":13904902,"name":"a test check to destroy"}}'
+    http_version:
+  recorded_at: Thu, 15 May 2025 03:57:52 GMT
+- request:
+    method: delete
+    uri: https://api.pingdom.com/api/3.1/checks/13904902
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin22 arm64) ruby/3.2.2p53
+      Authorization:
+      - "<AUTHORIZATION_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.pingdom.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 May 2025 03:57:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Req-Limit-Long:
+      - 'Remaining: 2087978 Time until reset: 2576532'
+      Req-Limit-Short:
+      - 'Remaining: 11589 Time until reset: 1123'
+      Server-Time:
+      - '1747281473'
+      X-Trace:
+      - 2B0CA449C5B4F5EE1C9684CF9DABE8D1874480D17E33D722E5A4C2E01F00
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 93ffb6b4d920d70c-BNE
+    body:
+      encoding: UTF-8
+      string: '{"message":"Deletion of check was successful!"}'
+    http_version:
+  recorded_at: Thu, 15 May 2025 03:57:53 GMT
+recorded_with: VCR 3.0.3

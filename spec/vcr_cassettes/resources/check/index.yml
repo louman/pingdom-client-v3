@@ -1,0 +1,54 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.pingdom.com/api/3.1/checks
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin22 arm64) ruby/3.2.2p53
+      Authorization:
+      - "<AUTHORIZATION_TOKEN>"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.pingdom.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 May 2025 02:51:43 GMT
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Req-Limit-Long:
+      - 'Remaining: 2087990 Time until reset: 2580502'
+      Req-Limit-Short:
+      - 'Remaining: 11591 Time until reset: 1476'
+      Server-Time:
+      - '1747277503'
+      X-Trace:
+      - 2B39541495636BC807675A88F08918C8D51DA7B4A5968589B22897308400
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 93ff55c6ef4dd70f-BNE
+    body:
+      encoding: UTF-8
+      string: '{"checks":[{"id":13904858,"created":1747277371,"name":"google","hostname":"google.com","resolution":1,"type":"http","ipv6":false,"verify_certificate":true,"status":"unknown"}],"counts":{"total":1,"limited":1,"filtered":1}}'
+    http_version:
+  recorded_at: Thu, 15 May 2025 02:51:43 GMT
+recorded_with: VCR 3.0.3

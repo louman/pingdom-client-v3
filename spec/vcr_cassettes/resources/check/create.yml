@@ -1,0 +1,58 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.pingdom.com/api/3.1/checks
+    body:
+      encoding: UTF-8
+      string: '{"host":"google.com","name":"a test check","type":"http"}'
+    headers:
+      Accept:
+      - "*/*"
+      User-Agent:
+      - rest-client/2.1.0 (darwin22 arm64) ruby/3.2.2p53
+      Authorization:
+      - "<AUTHORIZATION_TOKEN>"
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '57'
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Host:
+      - api.pingdom.com
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 15 May 2025 03:54:34 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '47'
+      Connection:
+      - keep-alive
+      Cache-Control:
+      - no-cache
+      Req-Limit-Long:
+      - 'Remaining: 2087982 Time until reset: 2576731'
+      Req-Limit-Short:
+      - 'Remaining: 11593 Time until reset: 1322'
+      Server-Time:
+      - '1747281274'
+      X-Trace:
+      - 2B77AF6DF5C01D8D77CA59038991E6CF8F245E0D01803B70B491B4379E00
+      Cf-Cache-Status:
+      - DYNAMIC
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 93ffb1d45912d723-BNE
+    body:
+      encoding: UTF-8
+      string: '{"check":{"id":13904898,"name":"a test check"}}'
+    http_version:
+  recorded_at: Thu, 15 May 2025 03:54:34 GMT
+recorded_with: VCR 3.0.3
