@@ -2,6 +2,8 @@
 
 Lightweight ruby gem for connecting to Pingdom's API V3.
 
+NOTE: This gem DOES NOT cover all API endpoints since all I needed was managing checks. Feel free to open a PR to add new endpoints or even rewrite part of the gem to use a more generic approach that makes it easier to add new endpoints.
+
 ## About Pingdom
 
 [https://www.pingdom.com/](https://www.pingdom.com/)
